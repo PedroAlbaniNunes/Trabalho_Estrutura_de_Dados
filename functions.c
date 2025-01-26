@@ -252,8 +252,62 @@ void f_removerPaciente(LinkedList *lista){
     }
     printf("Nenhum paciente encontrado com o ID fornecido.\n");
 }
+
+
+int maior_id(LinkedList *lista){
+    char linha[256];
+    int maior_id = 0;
+    int id_atual;
+
+    while (fgets(linha, sizeof(linha), lista)){
+        if (sscanf(linha, "%d",  &id_atual) == 1)
+        {
+            if (id_atual > maior_id)
+            {
+                maior_id = id_atual;
+            }
+        }
+    }
+
+    return maior_id;
+}
+
+void f_inserirPaciente(LinkedList *lista){
+    prinft("Para inserir um novo registro, digite os valores para os campos CPF (apenas dígitos), Nome, Idade e Data_Cadastro: \n");
     
-// void f_inserirPaciente(){}
+    char cpf, nome, idade, data_de_registro, opcao;
+    int id_atual, id_anterior;
+
+    id_anterior = maior_id(lista);
+    id_atual = id_anterior + 1;
+
+    
+    prinf("CPF: \n> ");
+    scanf("%c", &cpf);
+
+    prinf("Nome: \n> ");
+    scanf("%c", &nome);
+
+    printf("Idade: \n> ");
+    scanf("%c", &idade);
+
+    printf("Data de Registro: \n> ");
+    scanf("%c", &data_de_registro);
+
+    
+
+    printf("Confirma a inserção do registro abaixo? (S/N)\n");
+    scanf("%c", &opcao);
+
+    if (strcasecomp(opcao, "sim")){
+        printf("O registro foi concluído com sucesso.");
+        fprintf(lista, "%i,%s,%s,%s,%s\n", id_atual, f_formataCPF(cpf), nome, idade, data_de_registro);
+    }
+    else{
+        pritf("Registro cancelado.");
+    }
+
+}
 
 void f_imprimirLista(LinkedList *lista){
     char linha[256];
