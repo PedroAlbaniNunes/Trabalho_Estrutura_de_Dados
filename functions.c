@@ -255,4 +255,18 @@ void f_removerPaciente(LinkedList *lista){
     
 // void f_inserirPaciente(){}
 
-// void f_imprimirLista(){}
+void f_imprimirLista(LinkedList *lista){
+    char linha[256];
+    printf("ID/tCPF/t/tNome/t/tIdade/t/tData de Registro/n");
+    printf("------------------------------------------------");
+    while (fgets(linha, sizeof(linha), lista)){
+        char id[10], cpf[14], nome[50], idade[5], data_registro[10];
+
+        if (sscanf(linha, "%[^,],%[^,],%[^,],%[^,],%s", id, cpf, nome, idade, data_registro) == 5){
+            printf("%s\t%s\t%s\t%s\t%s\n", id, cpf, nome, idade, data_registro);
+        }
+        else{
+            prinf("Linha faltando informação.");
+        }
+    }
+}   
