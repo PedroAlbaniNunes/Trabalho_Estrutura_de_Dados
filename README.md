@@ -1,8 +1,9 @@
 # **Simulação de Sistema de Gerenciamento de Dados de Paciente**
 
 ## **Descrição do Projeto**
-O Simulador de Sistema de Gerenciamento de Dados de Paciente é um projeto acadêmico desenvolvido para a disciplina de Estrutura de Dados, lecionada pelo Prof. Dr. Thiago Meireles Paixão.
-O objetivo principal do sistema é fornecer um ambiente estruturado para armazenar, buscar, atualizar e remover registros de pacientes utilizando Listas Encadeadas.
+O **Simulador de Sistema de Gerenciamento de Dados de Paciente** é um projeto acadêmico desenvolvido para a disciplina de **Estrutura de Dados**, lecionada pelo **Prof. Dr. Thiago Meireles Paixão**. O objetivo principal do sistema é fornecer um ambiente estruturado para armazenar, buscar, atualizar e remover registros de pacientes utilizando **Listas Encadeadas**.
+
+---
 
 ## **Estrutura do Repositório**
 A organização do projeto segue uma estrutura modular para facilitar a manutenção e a compreensão do código:
@@ -20,8 +21,9 @@ A organização do projeto segue uma estrutura modular para facilitar a manuten�
 │── 📜 main.c            # Arquivo principal do programa  
 ```
 
-## **Pacientes**
+---
 
+## **1. Módulo Pacientes**
 ### **Estrutura Pacientes**
 | Variável | Tipo  | Função |
 |----------|------|--------|
@@ -42,13 +44,9 @@ A organização do projeto segue uma estrutura modular para facilitar a manuten�
 | maior_id | Verifica o maior id na lista | LinkedList *lista | int |
 | f_formataCPF | Formata o CPF | const char *cpf | char |
 
-## **Menu**
-### **Funções do Menu**
-| Função | Descrição | Parâmetros | Retorna |
-|--------|----------|------------|---------|
-| f_exibirMenu | Exibe o menu inicial | LinkedList *lista | void |
+---
 
-## **Lista**
+## **2. Módulo Lista**
 ### **Estrutura list_node**
 | Variável | Tipo | Função |
 |----------|------|--------|
@@ -68,42 +66,25 @@ A organização do projeto segue uma estrutura modular para facilitar a manuten�
 | f_adicionarNaLista | Adiciona dados à lista encadeada | LinkedList *lista, Paciente *novoPaciente | void |
 | f_imprimirLista | Imprime os dados da lista encadeada | LinkedList *lista | void |
 
-## **Arquivo**
+---
+
+## **3. Módulo Arquivo**
 ### **Funções do Arquivo**
 | Função | Descrição | Parâmetros | Retorna |
 |--------|----------|------------|---------|
 | f_carregarDados | Carrega os dados do arquivo para o programa | LinkedList *lista, const char *arquivo | void |
 | f_salvarDados | Salva os dados adicionados/alterados no arquivo | LinkedList *lista, const char *arquivo | void |
 
-# **Tipos Abstratos de Dados (TADs) Utilizados**
+---
 
-## **1. TAD Lista Encadeada (`LinkedList` e `ListNode`)**
-- **Finalidade**: Armazena e manipula dinamicamente os registros de pacientes.
-- **Principais operações**:
-  - Inserção e remoção de pacientes.
-  - Busca de pacientes na lista.
-  - Percorrer a lista para exibição ou modificação de dados.
+## **4. Módulo Menu**
+### **Funções do Menu**
+| Função | Descrição | Parâmetros | Retorna |
+|--------|----------|------------|---------|
+| f_exibirMenu | Exibe o menu inicial | LinkedList *lista | void |
 
-## **2. TAD Paciente (`Paciente`)**
-- **Finalidade**: Representa um paciente, armazenando seus dados pessoais.
-- **Principais operações**:
-  - Criação de novos pacientes.
-  - Modificação e atualização de dados do paciente.
-  - Exibição das informações cadastradas.
+---
 
-## **3. TAD Arquivo**
-- **Finalidade**: Gerencia a persistência de dados dos pacientes em um arquivo `.csv`.
-- **Principais operações**:
-  - Salvar e carregar dados de pacientes.
-  - Garantir que os registros sejam armazenados entre execuções do programa.
-
-## **4. TAD Menu**
-- **Finalidade**: Controla a interface de interação com o usuário.
-- **Principais operações**:
-  - Apresentar opções do sistema.
-  - Capturar e processar comandos do usuário.
-  - Direcionar para as operações correspondentes.
- 
 ## **Como Compilar e Executar**
 ### **Compilação**
 Para compilar o projeto, basta utilizar o comando abaixo na raiz do repositório:
@@ -115,12 +96,16 @@ Isso gerará o executável necessário para rodar o programa.
 ### **Execução**
 Após a compilação, o programa pode ser executado com:
 ```bash
-./executavel (Foi utilizado o nome "health.sys" como exemplo, caso deseje alterar, modifique o nome do executável no TARGET do arquivo Makefile).
+./executavel
 ```
+(Foi utilizado o nome "health_sys" como exemplo, caso deseje alterar, modifique o nome do executável no TARGET do arquivo Makefile).
+
+---
 
 ## **Integrantes do Projeto**
-
 | Aluno | GitHub | LinkedIn |
 |-------|--------|----------|
 | Gustavo Saraiva Mariano | [![GitHub](https://img.shields.io/badge/github-black?style=for-the-badge&logo=github)](https://github.com/saraivagustavo) | [![LinkedIn](https://img.shields.io/badge/linkedin-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/gustavo-saraiva-mariano/) |
 | Pedro Henrique Albani Nunes | [![GitHub](https://img.shields.io/badge/github-black?style=for-the-badge&logo=github)](https://github.com/PedroAlbaniNunes) | [![LinkedIn](https://img.shields.io/badge/linkedin-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/pedro-henrique-albani-nunes-33a729270/) |
+
+---
