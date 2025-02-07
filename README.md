@@ -1,7 +1,8 @@
 # **Simulação de Sistema de Gerenciamento de Dados de Paciente**
 
 ## **Descrição do Projeto**
-Este repositório contém a implementação de estruturas de dados fundamentais do projeto da disciplina de Estrutura de Dados, lecionada pelo Prof. Dr. Thiago Meireles Paixão. O objetivo é demonstrar o uso eficiente de Tipos Abstratos de Dados (TADs) para resolver problemas computacionais, garantindo modularidade, eficiência e boas práticas de programação.
+O Simulador de Sistema de Gerenciamento de Dados de Paciente é um projeto acadêmico desenvolvido para a disciplina de Estrutura de Dados, lecionada pelo Prof. Dr. Thiago Meireles Paixão.
+O objetivo principal do sistema é fornecer um ambiente estruturado para armazenar, buscar, atualizar e remover registros de pacientes utilizando Listas Encadeadas.
 
 ## **Estrutura do Repositório**
 A organização do projeto segue uma estrutura modular para facilitar a manutenção e a compreensão do código:
@@ -102,6 +103,20 @@ A organização do projeto segue uma estrutura modular para facilitar a manuten�
   - Apresentar opções do sistema.
   - Capturar e processar comandos do usuário.
   - Direcionar para as operações correspondentes.
+ 
+## **Como Compilar e Executar**
+### **Compilação**
+Para compilar o projeto, basta utilizar o comando abaixo na raiz do repositório:
+```bash
+make
+```
+Isso gerará o executável necessário para rodar o programa.
+
+### **Execução**
+Após a compilação, o programa pode ser executado com:
+```bash
+./executavel (Foi utilizado o nome "health.sys" como exemplo, caso deseje alterar, modifique o nome do executável no TARGET do arquivo Makefile).
+```
 
 ## **Integrantes do Projeto**
 
