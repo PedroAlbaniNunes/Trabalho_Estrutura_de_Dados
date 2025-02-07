@@ -18,7 +18,6 @@ void f_printPaciente(Paciente *paciente);
 void f_consultarPaciente(LinkedList *lista);
 void f_atualizarPaciente(LinkedList *lista);
 void f_inserirNovoPaciente(LinkedList *lista);
-void f_imprimirLista(LinkedList *lista);
 void f_removerPaciente(LinkedList *lista);
 int maior_id(LinkedList *lista);
 
