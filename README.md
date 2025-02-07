@@ -1,22 +1,22 @@
 # **Simulação de Sistema de Gerenciamento de Dados de Paciente**
 
 ## **Descrição do Projeto**
-Este repositório contém a implementação de estruturas de dados fundamentais para a disciplina de Estrutura de Dados, lecionada pelo Prof. Dr. Thiago Meireles Paixão. O objetivo é demonstrar o uso eficiente de Tipos Abstratos de Dados (TADs) para resolver problemas computacionais, garantindo modularidade, eficiência e boas práticas de programação.
+Este repositório contém a implementação de estruturas de dados fundamentais do projeto da disciplina de Estrutura de Dados, lecionada pelo Prof. Dr. Thiago Meireles Paixão. O objetivo é demonstrar o uso eficiente de Tipos Abstratos de Dados (TADs) para resolver problemas computacionais, garantindo modularidade, eficiência e boas práticas de programação.
 
 ## **Estrutura do Repositório**
 A organização do projeto segue uma estrutura modular para facilitar a manutenção e a compreensão do código:
 
 ```
 📂 Trabalho_Estrutura_de_Dados
-│── 📂 ESPECIFICAÇÃO   # Documentação técnica e requisitos do projeto  
-│── 📂 ARQUIVO         # Manipulação de arquivos  
-│── 📂 LISTA           # Implementação de listas encadeadas e operações  
-│── 📂 MENU            # Interface do menu do programa  
-│── 📂 PACIENTES       # Gerenciamento de dados dos pacientes  
-│── 📜 Makefile        # Arquivo para compilação automática do projeto  
-│── 📜 README.md       # Documentação do projeto  
-│── 📜 bd_pacientes.csv # Arquivo de dados dos pacientes utilizado pelo programa  
-│── 📜 main.c          # Arquivo principal do programa  
+│── 📂 ESPECIFICAÇÃO     # Documentação técnica e requisitos do projeto  
+│── 📂 ARQUIVO           # Manipulação de arquivos  
+│── 📂 LISTA             # Implementação de listas encadeadas e operações  
+│── 📂 MENU              # Interface do menu do programa  
+│── 📂 PACIENTES         # Gerenciamento de dados dos pacientes  
+│── 📜 Makefile          # Arquivo para compilação automática do projeto  
+│── 📜 README.md         # Documentação do projeto  
+│── 📜 bd_pacientes.csv  # Arquivo de dados dos pacientes utilizado pelo programa  
+│── 📜 main.c            # Arquivo principal do programa  
 ```
 
 ## **Pacientes**
