@@ -24,7 +24,7 @@ void f_carregarDados(LinkedList *lista, const char *arquivo) { // Função para 
                    paciente.data_cadastro) == 5) { // Lê os dados da linha
             f_adicionarNaLista(lista, &paciente); // Adiciona o paciente à lista
         } else {
-            printf("Linha inválida ignorada: %s", linha);
+            fprintf(stderr, "Erro ao ler a linha: %s", linha);
         }
     }
 
