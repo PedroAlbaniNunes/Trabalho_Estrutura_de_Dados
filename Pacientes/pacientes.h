@@ -20,5 +20,6 @@ void f_atualizarPaciente(LinkedList *lista);
 void f_inserirNovoPaciente(LinkedList *lista);
 void f_removerPaciente(LinkedList *lista);
 int maior_id(LinkedList *lista);
+char *f_formataCPF(const char *cpf);
 
 #endif
